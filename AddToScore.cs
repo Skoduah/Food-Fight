@@ -8,23 +8,13 @@ public class AddToScore : MonoBehaviour
     public Text score;
     public int scoreText;
     public int pointsEarned = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // Adds score accumulated into text
     public void AddScore()
     {
         scoreText += pointsEarned;
         score.text = "Score: " + scoreText.ToString();
     }
+    // Deducts score accumulated into text
     public void LosePointa()
     {
         scoreText -= pointsEarned;
